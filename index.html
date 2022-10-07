@@ -17,45 +17,147 @@
 		<main>
 			<div class="container">
 				<div class="row vh-100 align-items-center justify-content-center">
-					<div class="col-md-6 col-12">
+					<div class="col-md-10 col-12">
 						<form class="border p-5">
 							<div class="mb-3">
-								<label for="exampleInputEmail1" class="form-label"
-									>Email address</label
-								>
+								<p class="fs-1 text-center">Usuario</p>
 								<input
 									type="email"
-									class="form-control"
+									class="form-control fs-1"
 									id="exampleInputEmail1"
 									aria-describedby="emailHelp"
 									name="user"
+									placeholder="alumno@fpllefia.com"
 								/>
-								<div id="emailHelp" class="form-text">
-									We'll never share your email with anyone else.
-								</div>
+								
 							</div>
 							<div class="mb-3">
-								<label for="exampleInputPassword1" class="form-label"
-									>Password</label
-								>
+								<div class="row">
+									<p class="fs-1 text-center">Código</p>
+
+									<div class="col-6 col-lg-2">
+										<div class="card" style="">
+											<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<input
+													type="number"
+													class="form-control mb-3 fs-1"
+													id="d1"
+													name="pass"
+												/>
+											    <div class="d-grid gap-2">
+													<button class="btn btn-primary" type="button">Validar</button>
+													
+												  </div>
+
+											</div>
+										  </div>
+									</div>
+									<div class="col-6 col-lg-2">
+										<div class="card" style="">
+											<img src="https://fpllefia.com/images/imagenes/profesores/patricia_salinas.jpg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<input
+													type="number"
+													class="form-control mb-3 fs-1"
+													id="d2"
+													name="pass"
+												/>
+											    <div class="d-grid gap-2">
+													<button class="btn btn-primary" type="button">Validar</button>
+													
+												  </div>
+
+											</div>
+										  </div>
+									</div>
+									<div class="col-6 col-lg-2">
+										<div class="card" style="">
+											<img src="https://fpllefia.com/images/imagenes/profesores/jordi_egea.jpg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<input
+													type="number"
+													class="form-control mb-3 fs-1"
+													id="d3"
+													name="pass"
+												/>
+											    <div class="d-grid gap-2">
+													<button class="btn btn-primary" type="button">Validar</button>
+													
+												  </div>
+
+											</div>
+										  </div>
+									</div>
+									<div class="col-6 col-lg-2">
+										<div class="card" style="">
+											<img src="https://fpllefia.com/images/imagenes/profesores/anna_rovira1.jpg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<input
+													type="number"
+													class="form-control mb-3 fs-1"
+													id="d4"
+													name="pass"
+												/>
+											    <div class="d-grid gap-2">
+													<button class="btn btn-primary" type="button">Validar</button>
+													
+												  </div>
+
+											</div>
+										  </div>
+									</div>
+									<div class="col-6 col-lg-2">
+										<div class="card" style="">
+											<img src="https://fpllefia.com/images/2021/03/24/raul-2.jpg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<input
+													type="number"
+													class="form-control mb-3 fs-1"
+													id="d5"
+													name="pass"
+												/>
+											    <div class="d-grid gap-2">
+													<button class="btn btn-primary" type="button">Validar</button>
+													
+												  </div>
+
+											</div>
+										  </div>
+									</div>
+									<div class="col-6 col-lg-2">
+										<div class="card" style="">
+											<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<input
+													type="number"
+													class="form-control mb-3 fs-1"
+													id="d6"
+													name="pass"
+												/>
+											    <div class="d-grid gap-2">
+													<button class="btn btn-primary" type="button">Validar</button>
+													
+												  </div>
+
+											</div>
+										  </div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="d-grid gap-2">
 								<input
-									type="password"
-									class="form-control"
-									id="exampleInputPassword1"
+									type="number"
+									class="form-control mb-3 fs-1 text-center"
+									id="d6"
 									name="pass"
 								/>
-							</div>
-							<div class="mb-3 form-check">
-								<input
-									type="checkbox"
-									class="form-check-input"
-									id="exampleCheck1"
-								/>
-								<label class="form-check-label" for="exampleCheck1"
-									>Check me out</label
-								>
-							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
+								<button id="enviar" class="p-5 fs-1 btn btn-success large-button " type="submit">ENVIAR</button>
+								
+							  </div>
 						</form>
 					</div>
 				</div>
@@ -65,7 +167,7 @@
     
 	<script src="pintaExamen.js">
 		const form = document.querySelector("form");
-		const submit = document.querySelector("button");
+		const submit = document.querySelector("#enviar");
 		form.addEventListener("submit", (e) => {
 			e.preventDefault();
 
