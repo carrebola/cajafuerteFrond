@@ -18,12 +18,12 @@
 			<div class="container">
 				<div class="row vh-100 align-items-center justify-content-center">
 					<div class="col-md-10 col-12">
-						<form class="border p-5">
-							<div class="mb-3">
-								<p class="fs-1 text-center">Usuario</p>
+						<form>
+							<div class="row m-2 border p-3 shadow">
+								<p class="fs-3 text-center">ALUMNO</p>
 								<input
 									type="email"
-									class="form-control fs-1"
+									class="form-control fs-3 text-center"
 									id="exampleInputEmail1"
 									aria-describedby="emailHelp"
 									name="user"
@@ -31,161 +31,181 @@
 								/>
 								
 							</div>
-							<div class="mb-3">
-								<div class="row">
-									<p class="fs-1 text-center">Código</p>
-
-									<div class="col-6 col-lg-2">
-										<div class="card" style="">
-											<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<input
-													type="number"
-													class="form-control mb-3 fs-1"
-													id="d1"
-													name="pass"
-												/>
-											    <div class="d-grid gap-2">
-													<button class="btn btn-primary" type="button">Validar</button>
-													
-												  </div>
-
-											</div>
-										  </div>
-									</div>
-									<div class="col-6 col-lg-2">
-										<div class="card" style="">
-											<img src="https://fpllefia.com/images/imagenes/profesores/patricia_salinas.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<input
-													type="number"
-													class="form-control mb-3 fs-1"
-													id="d2"
-													name="pass"
-												/>
-											    <div class="d-grid gap-2">
-													<button class="btn btn-primary" type="button">Validar</button>
-													
-												  </div>
-
-											</div>
-										  </div>
-									</div>
-									<div class="col-6 col-lg-2">
-										<div class="card" style="">
-											<img src="https://fpllefia.com/images/imagenes/profesores/jordi_egea.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<input
-													type="number"
-													class="form-control mb-3 fs-1"
-													id="d3"
-													name="pass"
-												/>
-											    <div class="d-grid gap-2">
-													<button class="btn btn-primary" type="button">Validar</button>
-													
-												  </div>
-
-											</div>
-										  </div>
-									</div>
-									<div class="col-6 col-lg-2">
-										<div class="card" style="">
-											<img src="https://fpllefia.com/images/imagenes/profesores/anna_rovira1.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<input
-													type="number"
-													class="form-control mb-3 fs-1"
-													id="d4"
-													name="pass"
-												/>
-											    <div class="d-grid gap-2">
-													<button class="btn btn-primary" type="button">Validar</button>
-													
-												  </div>
-
-											</div>
-										  </div>
-									</div>
-									<div class="col-6 col-lg-2">
-										<div class="card" style="">
-											<img src="https://fpllefia.com/images/2021/03/24/raul-2.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<input
-													type="number"
-													class="form-control mb-3 fs-1"
-													id="d5"
-													name="pass"
-												/>
-											    <div class="d-grid gap-2">
-													<button class="btn btn-primary" type="button">Validar</button>
-													
-												  </div>
-
-											</div>
-										  </div>
-									</div>
-									<div class="col-6 col-lg-2">
-										<div class="card" style="">
-											<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<input
-													type="number"
-													class="form-control mb-3 fs-1"
-													id="d6"
-													name="pass"
-												/>
-											    <div class="d-grid gap-2">
-													<button class="btn btn-primary" type="button">Validar</button>
-													
-												  </div>
-
-											</div>
-										  </div>
-									</div>
-									
-								</div>
-								
-							</div>
 							
-							<div class="d-grid gap-2">
-								<input
-									type="number"
-									class="form-control mb-3 fs-1 text-center"
-									id="d6"
-									name="pass"
-								/>
-								<button id="enviar" class="p-5 fs-1 btn btn-success large-button " type="submit">ENVIAR</button>
+							<div id="divValidacion" class="row m-2 border p-2 shadow">
+								<p class="fs-1 text-center">Validación dígitos</p>
 								
-							  </div>
+								<div class="col-4 col-lg-2">
+									<div class="card mb-2" style="">
+										<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<input
+												type="text" maxlength="1" 
+												class="form-control mb-3 fs-1 text-center p-0 digito"
+												id="d1"
+												name="pass"
+											/>
+											
+
+										</div>
+										</div>
+								</div>
+								<div class="col-4 col-lg-2">
+									<div class="card mb-2" style="">
+										<img src="https://fpllefia.com/images/imagenes/profesores/patricia_salinas.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<input
+												type="text" maxlength="1" 
+												class="form-control mb-3 fs-1 text-center p-0 digito"
+												id="d2"
+												name="pass"
+											/>
+											
+
+										</div>
+										</div>
+								</div>
+								<div class="col-4 col-lg-2">
+									<div class="card mb-2" style="">
+										<img src="https://fpllefia.com/images/imagenes/profesores/jordi_egea.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<input
+												type="text" maxlength="1" 
+												class="form-control mb-3 fs-1 text-center p-0 digito"
+												id="d3"
+												name="pass"
+											/>
+											
+
+										</div>
+										</div>
+								</div>
+								<div class="col-4 col-lg-2">
+									<div class="card mb-2" style="">
+										<img src="https://fpllefia.com/images/imagenes/profesores/anna_rovira1.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<input
+												type="text" maxlength="1" 
+												class="form-control mb-3 fs-1 text-center p-0 digito"
+												id="d4"
+												name="pass"
+											/>
+											
+
+										</div>
+										</div>
+								</div>
+								<div class="col-4 col-lg-2">
+									<div class="card mb-2" style="">
+										<img src="https://fpllefia.com/images/2021/03/24/raul-2.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<input
+												type="text" maxlength="1" 
+												class="form-control mb-3 fs-1 text-center p-0 digito"
+												id="d5"
+												name="pass"
+											/>
+											
+
+										</div>
+										</div>
+								</div>
+								<div class="col-4 col-lg-2">
+									<div class="card mb-2" style="">
+										<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<input
+												type="text" maxlength="1" 
+												class="form-control mb-3 fs-1 text-center p-0 digito"
+												id="d6"
+												name="pass"
+												
+											/>
+											
+
+										</div>
+										</div>
+								</div>	
+								<div class="d-grid gap-2">
+									
+									<button id="validar" class="p-1 m-2 fs-3 btn btn-warning large-button " type="button">Validar dígitos</button>
+										
+								</div>
+							</div>
+								
+							<div class="row m-2 border p-2 shadow">
+								<div class="d-grid gap-2">
+									<p class="fs-1 text-center">CÓDIGO DE LA CAJA FUERTE VIRTUAL</p>
+									<input
+										type="text"
+										maxlength="6"
+										class="form-control mb-3 fs-1 text-center p-0"
+										id="pass"
+										name="pass"
+										placeholder="x x x x x x"
+									/>
+									<button id="enviar" class="p-5 fs-1 btn btn-success large-button " type="button">ENVIAR CÓDIGO</button>
+										
+								</div>
+							</div>
 						</form>
 					</div>
+					
 				</div>
 			</div>
 		</main>
 	</body>
     
-	<script src="pintaExamen.js">
-		const form = document.querySelector("form");
-		const submit = document.querySelector("#enviar");
-		form.addEventListener("submit", (e) => {
+	<script>
+		const form = document.querySelector("form")
+		const validar = document.querySelector("#validar")
+		const enviar = document.querySelector("#enviar")
+
+		validar.addEventListener("click", (e) => {
+			console.log("validar");
 			e.preventDefault();
-
 			//console.log(form.user.value,form.pass.value);
-
 		          //petición a la api
-		          const peticion = async ()=>{
-                    user = form.user.value,
-                    pass = form.pass.value
-                    const url = `http://localhost:8001/api?user=${user}&pass=${pass}`
+		          const peticionValidar = async ()=>{
+                    user = form.user.value
+                    pass = [
+						document.querySelector('#d1').value+
+						document.querySelector('#d2').value+
+						document.querySelector('#d3').value+
+						document.querySelector('#d4').value+
+						document.querySelector('#d5').value+
+						document.querySelector('#d6').value
+					]
+					
+					console.log(pass);
+                    const url = `http://localhost:8000/api/validar?user=${user}&pass=${pass}`
 		            var respuesta = await fetch(url)
                     respuesta = await respuesta.json()
-                    console.log(respuesta);
-                    pintaExamen(respuesta)
-
+					if(respuesta.error == false){
+						 document.querySelectorAll('.digito').forEach((elemento)=>{
+							elemento.classList.add('bg-success');
+						 })
+					}
+                    alert(respuesta.mensaje)
+                    //pintaExamen(respuesta)
                   }
-                  peticion()
-                  
+                  peticionValidar() 
+		});
+		enviar.addEventListener("click", (e) => {
+			e.preventDefault();
+			//console.log(form.user.value,form.pass.value);
+		          //petición a la api
+		          const peticionEnviar = async ()=>{
+                    user = form.user.value
+                    pass = document.querySelector('#pass').value;
+					
+                    const url = `http://localhost:8000/api/enviar?user=${user}&pass=${pass}`
+		            var respuesta = await fetch(url)
+                    respuesta = await respuesta.json()
+                    alert(respuesta.mensaje)
+                    //pintaExamen(respuesta)
+                  }
+                  peticionEnviar() 
 		});
 	</script>
 
