@@ -13,11 +13,11 @@
 		/>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	</head>
-	<body>
+	<body style="background-image: url('images/caja.jpg')">
 		<header></header>
 		<main>
-			<div class="container">
-				<div class="row vh-100 align-items-center justify-content-center">
+			<div class="container bg-white mt-5 mb-5 pt-5 pb-5">
+				<div class="row align-items-center justify-content-center">
 					<div class="col-md-10 col-12">
 						<form>
 							<div class="row m-2 border p-3 shadow">
@@ -25,118 +25,140 @@
 								<input
 									type="email"
 									class="form-control fs-3 text-center"
-									id="exampleInputEmail1"
+									id="user"
 									aria-describedby="emailHelp"
 									name="user"
 									placeholder="alumno@fpllefia.com"
 								/>
-								
 							</div>
-							
+
 							<div id="divValidacion" class="row m-2 border p-2 shadow">
 								<p class="fs-1 text-center">Validación dígitos</p>
-								
+
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
-										<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
+										<img
+											src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
 										<div class="card-body">
 											<input
-												type="text" maxlength="1" 
+												type="text"
+												maxlength="1"
 												class="form-control mb-3 fs-1 text-center p-0 digito"
 												id="d1"
 												name="pass"
 											/>
-											
-
 										</div>
-										</div>
+									</div>
 								</div>
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
-										<img src="https://fpllefia.com/images/imagenes/profesores/patricia_salinas.jpg" class="card-img-top" alt="...">
+										<img
+											src="https://fpllefia.com/images/imagenes/profesores/patricia_salinas.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
 										<div class="card-body">
 											<input
-												type="text" maxlength="1" 
+												type="text"
+												maxlength="1"
 												class="form-control mb-3 fs-1 text-center p-0 digito"
 												id="d2"
 												name="pass"
 											/>
-											
-
 										</div>
-										</div>
+									</div>
 								</div>
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
-										<img src="https://fpllefia.com/images/imagenes/profesores/jordi_egea.jpg" class="card-img-top" alt="...">
+										<img
+											src="https://fpllefia.com/images/imagenes/profesores/jordi_egea.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
 										<div class="card-body">
 											<input
-												type="text" maxlength="1" 
+												type="text"
+												maxlength="1"
 												class="form-control mb-3 fs-1 text-center p-0 digito"
 												id="d3"
 												name="pass"
 											/>
-											
-
 										</div>
-										</div>
+									</div>
 								</div>
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
-										<img src="https://fpllefia.com/images/imagenes/profesores/anna_rovira1.jpg" class="card-img-top" alt="...">
+										<img
+											src="https://fpllefia.com/images/imagenes/profesores/anna_rovira1.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
 										<div class="card-body">
 											<input
-												type="text" maxlength="1" 
+												type="text"
+												maxlength="1"
 												class="form-control mb-3 fs-1 text-center p-0 digito"
 												id="d4"
 												name="pass"
 											/>
-											
-
 										</div>
-										</div>
+									</div>
 								</div>
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
-										<img src="https://fpllefia.com/images/2021/03/24/raul-2.jpg" class="card-img-top" alt="...">
+										<img
+											src="https://fpllefia.com/images/2021/03/24/raul-2.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
 										<div class="card-body">
 											<input
-												type="text" maxlength="1" 
+												type="text"
+												maxlength="1"
 												class="form-control mb-3 fs-1 text-center p-0 digito"
 												id="d5"
 												name="pass"
 											/>
-											
-
 										</div>
-										</div>
+									</div>
 								</div>
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
-										<img src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg" class="card-img-top" alt="...">
+										<img
+											src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
 										<div class="card-body">
 											<input
-												type="text" maxlength="1" 
+												type="text"
+												maxlength="1"
 												class="form-control mb-3 fs-1 text-center p-0 digito"
 												id="d6"
 												name="pass"
-												
 											/>
-											
-
 										</div>
-										</div>
-								</div>	
+									</div>
+								</div>
 								<div class="d-grid gap-2">
-									
-									<button id="validar" class="p-1 m-2 fs-3 btn btn-warning large-button " type="button">Validar dígitos</button>
-										
+									<button
+										id="validar"
+										class="p-1 m-2 fs-3 btn btn-warning large-button"
+										type="button"
+									>
+										Validar dígitos
+									</button>
 								</div>
 							</div>
-								
+
 							<div class="row m-2 border p-2 shadow">
 								<div class="d-grid gap-2">
-									<p class="fs-1 text-center">CÓDIGO DE LA CAJA FUERTE VIRTUAL</p>
+									<p class="fs-1 text-center">
+										CÓDIGO DE LA CAJA FUERTE VIRTUAL
+									</p>
 									<input
 										type="text"
 										maxlength="6"
@@ -145,102 +167,23 @@
 										name="pass"
 										placeholder="x x x x x x"
 									/>
-									<button id="enviar" class="p-5 fs-1 btn btn-success large-button disabled" type="button">ENVIAR CÓDIGO</button>
-										
+									<button
+										id="enviar"
+										class="p-5 fs-1 btn btn-success large-button disabled"
+										type="button"
+									>
+										ENVIAR CÓDIGO
+									</button>
 								</div>
 							</div>
 						</form>
 					</div>
-					
 				</div>
 			</div>
 		</main>
 	</body>
-    
-	<script>
+
+	<script src="index.js">
 		
-		const form = document.querySelector("form")
-		const validar = document.querySelector("#validar")
-		const enviar = document.querySelector("#enviar")
-
-		validar.addEventListener("click", (e) => {
-			console.log("validar");
-			e.preventDefault();
-			//console.log(form.user.value,form.pass.value);
-		          //petición a la api
-		          const peticionValidar = async ()=>{
-                    user = form.user.value
-                    pass = [
-						document.querySelector('#d1').value+
-						document.querySelector('#d2').value+
-						document.querySelector('#d3').value+
-						document.querySelector('#d4').value+
-						document.querySelector('#d5').value+
-						document.querySelector('#d6').value
-					]
-					
-					console.log(pass);
-                    const url = `http://localhost:8000/api/validar?user=${user}&pass=${pass}`
-		            var respuesta = await fetch(url)
-                    respuesta = await respuesta.json()
-					var icono =""
-					var titulo=""
-					if(respuesta.error == false){
-						icono="success"
-						titulo="¡Buen trabajo!"
-						 document.querySelectorAll('.digito').forEach((elemento)=>{
-							elemento.classList.add('bg-success');
-						 })
-						document.querySelector("#enviar").classList.remove('disabled')
-					}
-					else{
-						icono="warning"
-						titulo="¡Uf...!"
-					}
-                    //alert(respuesta.mensaje)
-					
-					swal({
-						title: titulo,
-						text: respuesta.mensaje,
-						icon: icono,
-					});
-                    //pintaExamen(respuesta)
-                  }
-                  peticionValidar() 
-		});
-		enviar.addEventListener("click", (e) => {
-			e.preventDefault();
-			//console.log(form.user.value,form.pass.value);
-		          //petición a la api
-		          const peticionEnviar = async ()=>{
-                    user = form.user.value
-                    pass = document.querySelector('#pass').value;
-					
-                    const url = `http://localhost:8000/api/enviar?user=${user}&pass=${pass}`
-		            var respuesta = await fetch(url)
-                    respuesta = await respuesta.json()
-					
-                    var icono = ""
-					var titulo = ""
-					if(respuesta.error == false){
-						icono="success"
-						titulo="¡Buen trabajo!"
-						console.log(respuesta.datos.modelo, respuesta.datos.preguntas)
-						localStorage.setItem("datos", JSON.stringify(respuesta.datos))
-					}
-					else{
-						icono="warning"
-						titulo="¡Uf...!"
-					}
-					swal({
-						title: titulo,
-						text: respuesta.mensaje,
-						icon: icono,
-					});
-                  }
-                  peticionEnviar() 
-		});
 	</script>
-
-
 </html>
