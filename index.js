@@ -18,30 +18,40 @@ const form = document.querySelector("form");
                     (document.querySelector("#d6").value)
 				;
 
-				console.log(pass);
-				const url = `http://localhost:8000/api/validar?user=${user}&pass=${pass}`;
-				var respuesta = await fetch(url);
-				respuesta = await respuesta.json();
-				var icono = "";
-				var titulo = "";
-				if (respuesta.error == false) {
-					icono = "success";
-					titulo = "¡Buen trabajo!";
-					document.querySelectorAll(".digito").forEach((elemento) => {
-						elemento.classList.add("bg-success");
-					});
-					document.querySelector("#enviar").classList.remove("disabled");
-				} else {
-					icono = "warning";
-					titulo = "¡Uf...!";
-				}
-				//alert(respuesta.mensaje)
+				const urlHost = `https://cajafuerte.herokuapp.com`
+				const url = `${urlHost}/api/validar?user=${user}&pass=${pass}`;
 
-				swal({
-					title: titulo,
-					text: respuesta.mensaje,
-					icon: icono,
-				});
+				try {
+					var respuesta = await fetch(url);
+					respuesta = await respuesta.json();
+					var icono = "";
+					var titulo = "";
+					if (respuesta.error == false) {
+						icono = "success";
+						titulo = "¡Buen trabajo!";
+						document.querySelectorAll(".digito").forEach((elemento) => {
+							elemento.classList.add("bg-success");
+						});
+						document.querySelector("#enviar").classList.remove("disabled");
+					} else {
+						icono = "warning";
+						titulo = "¡Uf...!";
+					}
+					//alert(respuesta.mensaje)
+
+					swal({
+						title: titulo,
+						text: respuesta.mensaje,
+						icon: icono,
+					});
+				} catch (error) {
+					swal({
+						title: "Error en la conexión",
+						text: "Se ha producido un error al conectar con la API",
+						icon: "warning",
+					});
+				}
+				
 				//pintaExamen(respuesta)
 			};
 			peticionValidar();

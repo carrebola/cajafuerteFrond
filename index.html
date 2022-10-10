@@ -13,26 +13,28 @@
 		/>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	</head>
-	<body style="background-image: url('images/caja.jpg')">
+	<body style="background-image: url('images/caja.jpg'); background-size: cover;">
 		<header></header>
 		<main>
-			<div class="container bg-white mt-5 mb-5 pt-5 pb-5">
+			<div class="container mt-5 mb-5 pt-2 pb-5">
 				<div class="row align-items-center justify-content-center">
 					<div class="col-md-10 col-12">
 						<form>
-							<div class="row m-2 border p-3 shadow">
-								<p class="fs-3 text-center">ALUMNO</p>
+							<div class="row m-2 border p-3 shadow bg-white">
+								<h1 class="text-center">La caja fuerte virtual de M6</h1>
+								<div class="col-12 col-lg-6 offset-lg-3">
 								<input
 									type="email"
-									class="form-control fs-3 text-center"
+									class="form-control fs-3 text-center "
 									id="user"
 									aria-describedby="emailHelp"
 									name="user"
 									placeholder="alumno@fpllefia.com"
 								/>
+								</div>
 							</div>
 
-							<div id="divValidacion" class="row m-2 border p-2 shadow">
+							<div id="divValidacion" class="row m-2 border p-2 shadow bg-white">
 								<p class="fs-1 text-center">Validación dígitos</p>
 
 								<div class="col-4 col-lg-2">
@@ -154,7 +156,7 @@
 								</div>
 							</div>
 
-							<div class="row m-2 border p-2 shadow">
+							<div class="row m-2 border p-2 shadow bg-white">
 								<div class="d-grid gap-2">
 									<p class="fs-1 text-center">
 										CÓDIGO DE LA CAJA FUERTE VIRTUAL
