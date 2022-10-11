@@ -1,3 +1,8 @@
+swal({
+						title: "Bienvenido!",
+						text: "Averigua y valida los dígitos de la caja fuente. Pero ¡Cuidado! Solo tienes 3 oportunidades tanto para validar y confirmar el ",
+						
+					});
 const form = document.querySelector("form");
 		const validar = document.querySelector("#validar");
 		const enviar = document.querySelector("#enviar");
