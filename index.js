@@ -93,13 +93,14 @@ const form = document.querySelector("form");
 					confirm = "Volver"
 					icono = "error"
 					titulo = "¡Uf...!"
+					swal({
+						title: titulo,
+						text: respuesta.mensaje,
+						icon: icono,
+						
+					});
 				}
-				swal({
-					title: titulo,
-					text: respuesta.mensaje,
-					icon: icono,
-					confirmButtonText: confirm
-				});
+				
 			};
 			peticionEnviar();
 		});
