@@ -1,8 +1,12 @@
 swal({
-						title: "Bienvenido!",
-						text: "Averigua y valida los dígitos de la caja fuente. Pero ¡Cuidado! Solo tienes 3 oportunidades tanto para validar y confirmar el ",
-						
-					});
+	confirmButtonText: "Dale!",
+	title: "Bienvenido!!!",
+	text: `Averigua y valida los dígitos de la caja fuente. \n
+	Pero ¡Cuidado! Solo tienes 3 oportunidades `,
+	
+	
+});
+
 const form = document.querySelector("form");
 		const validar = document.querySelector("#validar");
 		const enviar = document.querySelector("#enviar");
@@ -75,21 +79,26 @@ const form = document.querySelector("form");
 				var respuesta = await fetch(url);
 				respuesta = await respuesta.json();
 
-				var icono = "";
-				var titulo = "";
+				var icono = ""
+				var titulo = ""
+				var confirm = ""
 				if (respuesta.error == false) {
-					icono = "success";
-					titulo = "¡Buen trabajo!";
+					confirm = "Ver examen"
+					icono = "success"
+					titulo = "¡Buen trabajo!"
 					console.log(respuesta.datos.modelo, respuesta.datos.preguntas);
 					localStorage.setItem("datos", JSON.stringify(respuesta.datos));
+					window.location.assign("https://carrebola.github.io/cajafuerteFrond/examen.html")
 				} else {
-					icono = "warning";
-					titulo = "¡Uf...!";
+					confirm = "Volver"
+					icono = "error"
+					titulo = "¡Uf...!"
 				}
 				swal({
 					title: titulo,
 					text: respuesta.mensaje,
 					icon: icono,
+					confirmButtonText: confirm
 				});
 			};
 			peticionEnviar();
