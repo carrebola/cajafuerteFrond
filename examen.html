@@ -30,6 +30,8 @@
 </body>
 <script>
 	const datos = JSON.parse(localStorage.getItem("datos"))
+	console.log(datos);
+
 	document.querySelector("#modelo").innerHTML = datos.modelo
 	var preguntas = ""
 	datos.preguntas.forEach(element => {
