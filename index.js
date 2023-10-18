@@ -1,4 +1,4 @@
-let urlHost = `https://cajafuerte.vercel.app/`
+let urlHost = `https://cajafuerte.vercel.app`
 
 swal({
 	confirmButtonText: "Dale!",
