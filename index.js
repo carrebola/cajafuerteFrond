@@ -1,3 +1,5 @@
+let urlHost = `https://cajafuerte.vercel.app/`
+
 swal({
 	confirmButtonText: "Dale!",
 	title: "Bienvenido!!!",
@@ -27,7 +29,7 @@ const form = document.querySelector("form");
                     (document.querySelector("#d6").value)
 				;
 
-				const urlHost = `http://localhost:8000`
+				
 				const url = `${urlHost}/api/validar?user=${user}&pass=${pass}`;
 
 				try {
@@ -73,7 +75,6 @@ const form = document.querySelector("form");
 				user = document.querySelector("#user").value;
 				pass = document.querySelector("#pass").value;
                 console.log("user",user);
-				const urlHost = `http://localhost:8000`
 				const url = `${urlHost}/api/enviar?user=${user}&pass=${pass}`;
 				
 				var respuesta = await fetch(url);
@@ -88,7 +89,6 @@ const form = document.querySelector("form");
 					titulo = "¡Buen trabajo!"
 					console.log(respuesta.datos.modelo, respuesta.datos.preguntas);
 					localStorage.setItem("datos", JSON.stringify(respuesta.datos));
-					
 					window.location.assign("http://carrebola.github.io/cajafuerteFrond/examen.html")
 				} else {
 					confirm = "Volver"

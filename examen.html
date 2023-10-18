@@ -11,6 +11,7 @@
 			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 			crossorigin="anonymous"
 		/>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 	<div class="container mt-3">
@@ -30,6 +31,13 @@
 </body>
 <script>
 	console.log('Examen');
+	swal({
+	confirmButtonText: "¡A trabajar!",
+	title: "¡¡¡Felicidades!!!",
+	text: `Has conseguido descifrar la clave. Aquí tienes tu examen... `,
+	
+	
+});
 	const datos = JSON.parse(localStorage.getItem("datos"))
 	console.log('datos de ls: ' , datos);
 
