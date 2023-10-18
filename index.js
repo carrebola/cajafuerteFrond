@@ -88,6 +88,7 @@ const form = document.querySelector("form");
 					titulo = "¡Buen trabajo!"
 					console.log(respuesta.datos.modelo, respuesta.datos.preguntas);
 					localStorage.setItem("datos", JSON.stringify(respuesta.datos));
+					
 					window.location.assign("http://carrebola.github.io/cajafuerteFrond/examen.html")
 				} else {
 					confirm = "Volver"

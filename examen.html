@@ -29,10 +29,11 @@
 	
 </body>
 <script>
+	console.log('Examen');
 	const datos = JSON.parse(localStorage.getItem("datos"))
-	console.log(datos);
+	console.log('datos de ls: ' , datos);
 
-	document.querySelector("#modelo").innerHTML = datos.modelo
+	document.querySelector("#modelo").innerHTML = datos.modelo  || 'No tienes permisos'
 	var preguntas = ""
 	datos.preguntas.forEach(element => {
 		preguntas+=`<div class="border shadow mb-3 p-3" ><h4>${element.titulo}</h4><p>${element.enunciado} - ${element.puntuacion}</p></div>`
