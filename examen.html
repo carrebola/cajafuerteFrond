@@ -44,11 +44,8 @@
 	console.log('datos de ls: ' , datos);
 
 	document.querySelector("#modelo").innerHTML = datos.modelo  || 'No tienes permisos'
-	var preguntas = ""
-	datos.preguntas.forEach(element => {
-		preguntas+=`<div class="border shadow mb-3 p-3" ><h4><a href="${element.titulo}">${element.titulo}</a></h4><p>${element.enunciado} - ${element.puntuacion}</p></div>`
-	});
-	document.querySelector("#preguntas").innerHTML = preguntas
+	const url = datos.url
+	document.querySelector("#preguntas").innerHTML = url
 
 
 </script>
