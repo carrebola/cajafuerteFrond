@@ -46,7 +46,7 @@
 	document.querySelector("#modelo").innerHTML = datos.modelo  || 'No tienes permisos'
 	var preguntas = ""
 	datos.preguntas.forEach(element => {
-		preguntas+=`<div class="border shadow mb-3 p-3" ><h4><a href="${urlHost}/bd/${element.titulo}.pdf">${element.titulo}</a></h4><p>${element.enunciado} - ${element.puntuacion}</p></div>`
+		preguntas+=`<div class="border shadow mb-3 p-3" ><h4><a href="${element.titulo}">${element.titulo}</a></h4><p>${element.enunciado} - ${element.puntuacion}</p></div>`
 	});
 	document.querySelector("#preguntas").innerHTML = preguntas
 
