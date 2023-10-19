@@ -44,7 +44,7 @@ const form = document.querySelector("form");
 							elemento.classList.add("bg-success");
 						});
 						document.querySelector("#enviar").classList.remove("disabled");
-						document.querySelector('codigo').classList.remove("d-none");
+						document.querySelector('#codigo').classList.remove("d-none");
 					} else {
 						icono = "warning";
 						titulo = "¡Uf...!";
