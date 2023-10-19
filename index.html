@@ -13,19 +13,19 @@
 		/>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	</head>
-	<body style="background-image: url('images/caja.jpg'); background-size: cover;">
+	<body style="background-image: url('images/caja.jpg'); background-repeat: no-repeat;">
 		<header></header>
 		<main>
 			<div class="container mt-5 mb-5 pt-2 pb-5">
 				<div class="row align-items-center justify-content-center">
 					<div class="col-md-10 col-12">
 						<form>
-							<div class="row m-2 border p-3 shadow bg-white">
-								<h1 class="text-center">La caja fuerte virtual de M6 (v2)</h1>
+							<div class="row m-2 border p-3 shadow bg-warning">
+								<h1 class="text-center">La caja fuerte virtual de M6 (2023/2024)</h1>
 								<div class="col-12 col-lg-6 offset-lg-3">
 								<input
 									type="email"
-									class="form-control fs-3 text-center "
+									class="form-control fs-5 text-center "
 									id="user"
 									aria-describedby="emailHelp"
 									name="user"
@@ -130,7 +130,7 @@
 								<div class="col-4 col-lg-2">
 									<div class="card mb-2" style="">
 										<img
-											src="https://fpllefia.com/images/imagenes/profesores/foto2_carlos.jpg"
+											src="https://fpllefia.com/images/imagenes/profesores/rosa.png"
 											class="card-img-top"
 											alt="..."
 										/>
@@ -148,7 +148,7 @@
 								<div class="d-grid gap-2">
 									<button
 										id="validar"
-										class="p-1 m-2 fs-3 btn btn-warning large-button"
+										class="p-1 m-2 fs-3 btn btn-success large-button"
 										type="button"
 									>
 										Validar dígitos
@@ -156,7 +156,7 @@
 								</div>
 							</div>
 
-							<div class="row m-2 border p-2 shadow bg-white">
+							<div id="codigo" class="d-none row m-2 border p-2 shadow bg-white">
 								<div class="d-grid gap-2">
 									<p class="fs-1 text-center">
 										CÓDIGO DE LA CAJA FUERTE VIRTUAL
