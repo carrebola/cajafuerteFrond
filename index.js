@@ -1,4 +1,5 @@
-let urlHost = `https://caja-fuerte-v2.onrender.com`
+let urlHost = `https://cajafuerte-v2.vercel.app/`
+//let urlHost = 'http://localhost:8000'
 
 swal({
 	confirmButtonText: "Dale!",
