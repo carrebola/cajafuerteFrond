@@ -3,7 +3,7 @@ let urlHost = `https://cajafuerte-12gi9xy6b-carrebolas-projects.vercel.app/`
 
 swal({
 	confirmButtonText: "Dale!",
-	title: "¡¡¡Bienvenido!!!!",
+	title: "¡¡¡Bienvenido!!!",
 	text: `Averigua y valida los dígitos de la caja fuente. \n
 	Pero ¡Cuidado! Solo tienes 3 oportunidades `,
 	
