@@ -1,4 +1,4 @@
-let urlHost = `https://cajafuerte-12gi9xy6b-carrebolas-projects.vercel.app/`
+let urlHost = `https://cajafuerte-12gi9xy6b-carrebolas-projects.vercel.app`
 //let urlHost = 'http://localhost:8000'
 
 swal({
